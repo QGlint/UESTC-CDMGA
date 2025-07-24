@@ -2,10 +2,11 @@ module.exports = {
   lintOnSave: false, // 关闭语法检测
   // 开启代理服务器
   devServer: {
+    port: 8081, 
     // 代理服务器可以将路由中的指定前缀转发到指定的后端服务器中
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target:   'http://172.30.136.21:8080',
         ws: true, // 是否启用websockets
         changeOrigin: true,  // 代理时是否更改host
         pathRewrite: {
