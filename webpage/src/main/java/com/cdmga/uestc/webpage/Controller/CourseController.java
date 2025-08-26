@@ -36,7 +36,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 
-@CrossOrigin(origins = "http://localhost:8081")
+//@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api/course")
 public class CourseController {

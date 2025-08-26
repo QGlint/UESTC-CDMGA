@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cdmga.uestc.webpage.Entity.Course;
 import com.cdmga.uestc.webpage.Service.CourseService;
 
-@CrossOrigin(origins = "http://localhost:8081")
+//@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api/home")
 public class HomeController {

@@ -23,7 +23,7 @@ import com.cdmga.uestc.webpage.Common.Result;
 import com.cdmga.uestc.webpage.Entity.Identity;
 import com.cdmga.uestc.webpage.Service.IdentityService;
 
-@CrossOrigin(origins = "http://localhost:8081")
+//@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api/identity")
 public class IdentityController {
@@ -33,7 +33,7 @@ public class IdentityController {
 
     
     // 注册接口
-    @CrossOrigin(origins = "http://localhost:8081")
+    //@CrossOrigin(origins = "http://localhost:8081")
     @PostMapping("/register")
     public Result register(@RequestBody RegisterRequest registerRequest) {
         try {
@@ -49,7 +49,7 @@ public class IdentityController {
         }
     }
     // 接收 JSON 请求体
-    @CrossOrigin(origins = "http://localhost:8081")
+    //@CrossOrigin(origins = "http://localhost:8081")
     @PostMapping("/login")
     public Result login(@RequestBody LoginRequest loginRequest) {
         try {
